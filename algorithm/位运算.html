@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>位运算 | Mars 博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="一个简单的记录网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.6c8f47f2.css" as="style"><link rel="preload" href="/assets/js/app.f0bf87a3.js" as="script"><link rel="preload" href="/assets/js/2.9885c7ab.js" as="script"><link rel="preload" href="/assets/js/11.af67e6c8.js" as="script"><link rel="prefetch" href="/assets/js/10.13d8c240.js"><link rel="prefetch" href="/assets/js/12.8c642125.js"><link rel="prefetch" href="/assets/js/13.2b622a04.js"><link rel="prefetch" href="/assets/js/14.e498cb80.js"><link rel="prefetch" href="/assets/js/15.1c5229c8.js"><link rel="prefetch" href="/assets/js/16.0a86e93d.js"><link rel="prefetch" href="/assets/js/17.515ad2cd.js"><link rel="prefetch" href="/assets/js/18.001ce609.js"><link rel="prefetch" href="/assets/js/19.73ced7bc.js"><link rel="prefetch" href="/assets/js/20.73745822.js"><link rel="prefetch" href="/assets/js/21.f7572561.js"><link rel="prefetch" href="/assets/js/22.ef0a0d03.js"><link rel="prefetch" href="/assets/js/23.ec466550.js"><link rel="prefetch" href="/assets/js/24.26b03f1c.js"><link rel="prefetch" href="/assets/js/25.cf834fc2.js"><link rel="prefetch" href="/assets/js/26.c2ba60d1.js"><link rel="prefetch" href="/assets/js/27.23c4cb8c.js"><link rel="prefetch" href="/assets/js/28.9455c26d.js"><link rel="prefetch" href="/assets/js/29.ab0a77fe.js"><link rel="prefetch" href="/assets/js/3.4be2e3ad.js"><link rel="prefetch" href="/assets/js/30.db0a45f4.js"><link rel="prefetch" href="/assets/js/31.e6878dae.js"><link rel="prefetch" href="/assets/js/32.ab7b3fe5.js"><link rel="prefetch" href="/assets/js/33.9c2eda1c.js"><link rel="prefetch" href="/assets/js/34.c083b084.js"><link rel="prefetch" href="/assets/js/35.3c5ae702.js"><link rel="prefetch" href="/assets/js/36.26e9d3e4.js"><link rel="prefetch" href="/assets/js/4.d13662f1.js"><link rel="prefetch" href="/assets/js/5.37ea8474.js"><link rel="prefetch" href="/assets/js/6.b8056fcf.js"><link rel="prefetch" href="/assets/js/7.6f700ec0.js"><link rel="prefetch" href="/assets/js/8.90656a6d.js"><link rel="prefetch" href="/assets/js/9.fd85fe83.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6c8f47f2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/Mars.png" alt="Mars 博客" class="logo"> <span class="site-name can-hide">Mars 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/java/" class="nav-link">
+  java语言
+</a></li></ul></div></div><div class="nav-item"><a href="/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/thirdparty/" class="nav-link">
+  技术
+</a></div><div class="nav-item"><a href="/exam/" class="nav-link">
+  成考
+</a></div><div class="nav-item"><a href="/collect/" class="nav-link">
+  个人收藏
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  总结
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的" class="dropdown-title"><span class="title">我的</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的" class="mobile-dropdown-title"><span class="title">我的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/me/" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/a784947778" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/712139234359182/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/java/" class="nav-link">
+  java语言
+</a></li></ul></div></div><div class="nav-item"><a href="/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/thirdparty/" class="nav-link">
+  技术
+</a></div><div class="nav-item"><a href="/exam/" class="nav-link">
+  成考
+</a></div><div class="nav-item"><a href="/collect/" class="nav-link">
+  个人收藏
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  总结
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的" class="dropdown-title"><span class="title">我的</span> <span class="arrow down"></span></button> <button type="button" aria-label="我的" class="mobile-dropdown-title"><span class="title">我的</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/me/" class="nav-link">
+  简介
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/a784947778" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/712139234359182/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/algorithm/数据结构与算法.html" class="sidebar-link">数据结构与算法</a></li><li><a href="/algorithm/位运算.html" class="active sidebar-link">位运算</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="位运算"><a href="#位运算" class="header-anchor">#</a> 位运算</h1> <table><thead><tr><th></th> <th>解释</th> <th>实例</th> <th>备注</th></tr></thead> <tbody><tr><td></td> <td>实例1</td> <td>000000011</td> <td></td></tr> <tr><td></td> <td>实例2</td> <td>000000001</td> <td></td></tr> <tr><td>&amp;（与）</td> <td>两个位置都是1，则为1</td> <td>000000001</td> <td></td></tr> <tr><td>|（或）</td> <td>两个位置上只要拥有一个1，则为1</td> <td>000000011</td> <td></td></tr> <tr><td>^（异或）</td> <td>两个位置数字不同，则为1</td> <td>000000010</td> <td>符合交换律和结合律，0^N=N, N^N=0</td></tr> <tr><td>~（非）</td> <td></td> <td></td> <td></td></tr> <tr><td>&gt;&gt;</td> <td></td> <td></td> <td></td></tr> <tr><td>&lt;&lt;</td> <td></td> <td></td> <td></td></tr> <tr><td>&gt;&gt;&gt;</td> <td></td> <td></td> <td></td></tr> <tr><td>原码</td> <td></td> <td></td> <td></td></tr> <tr><td>补码</td> <td></td> <td></td> <td></td></tr> <tr><td>反码</td> <td></td> <td></td> <td></td></tr></tbody></table> <p>顺便推荐一下我的个人网站，上面收集了几百本计算机经典书籍，下次找书直接在上面下载就行.....</p> <p>https://tanqingbo.cn/CSBook001/</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/22/2023, 3:07:16 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/algorithm/数据结构与算法.html" class="prev">
+        数据结构与算法
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f0bf87a3.js" defer></script><script src="/assets/js/2.9885c7ab.js" defer></script><script src="/assets/js/11.af67e6c8.js" defer></script>
+  </body>
+</html>
